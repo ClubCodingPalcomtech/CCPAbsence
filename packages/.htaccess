@@ -1,0 +1,21 @@
+##
+# SDaiLover Open Source & Software Development
+#
+# @fullname : Stephanus Bagus Saputra
+#             ( 戴 Dai 偉 Wie 峯 Funk )
+# @email    : wiefunk@stephanusdai.web.id
+# @contact  : http://t.me/wiefunkdai
+# @support  : http://opencollective.com/wiefunkdai
+# @link     : http://www.stephanusdai.web.id
+# @license https://www.sdailover.web.id/license/
+# @copyright (c) 2023 StephanusDai Developer. All rights reserved.
+#
+<IfModule !authz_core_module>
+    Order Deny,Allow
+    Deny from All
+</IfModule>
+<IfModule authz_core_module>
+	<RequireAll>
+		Require all denied
+	</RequireAll>
+</IfModule>
